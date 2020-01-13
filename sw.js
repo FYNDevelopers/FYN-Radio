@@ -12,6 +12,14 @@ var filesToCache = [
     '/privacy.html',
     '/terms.html',
 
+    '/css/fyn_radio_styling.css',
+    '/css/fyn_radio_mobile_style.css',
+    '/css/css/all.css',
+    '/css/webfonts/fa-solid-900.eot',
+    '/css/webfonts/fa-solid-900.svg',
+    '/css/webfonts/fa-solid-900.ttf',
+    '/css/webfonts/fa-solid-900.woff',
+    '/css/webfonts/fa-solid-900.woff2',
 
     '/scripts/fynradio_scripts.js',
     '/scripts/responsive-nav.js',
@@ -37,16 +45,9 @@ var filesToCache = [
     '/icons/responsivenav.eot',
     '/icons/responsivenav.svg',
     '/icons/responsivenav.ttf',
-    '/icons/responsivenav.woff',
+    '/icons/responsivenav.woff'
 
-    '/css/fyn_radio_styling.css',
-    '/css/fyn_radio_mobile_style.css',
-    '/css/css/all.css',
-    '/css/webfonts/fa-solid-900.eot',
-    '/css/webfonts/fa-solid-900.svg',
-    '/css/webfonts/fa-solid-900.ttf',
-    '/css/webfonts/fa-solid-900.woff',
-    '/css/webfonts/fa-solid-900.woff2'
+
 
 
 ];
