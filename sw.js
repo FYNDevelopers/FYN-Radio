@@ -1,3 +1,5 @@
+// sw.js
+
 var cacheName = 'FYNRadio_V1';
 const offlineUrl = '/offline_page.html';
 var cacheVersion = 1;
@@ -40,6 +42,7 @@ var filesToCache = [
     '/pics/fyn_radio_logo_2.png',
     '/pics/fyn_radio_logo_2_white.png',
     '/pics/icon_256.png',
+    '/pics/icon_512.png',
     '/pics/includes.webp',
 
     '/icons/responsivenav.eot',
