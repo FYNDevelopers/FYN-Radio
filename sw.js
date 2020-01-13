@@ -1,17 +1,13 @@
 // sw.js
 
 var cacheName = 'FYNRadio_V1';
-/*const offlineUrl = '/offline_page.html';*/
+const offlineUrl = '/offline_page.html';
 var cacheVersion = 1;
 var currentCache = {
   offline: 'offline-cache' + cacheVersion
 };
 
 var filesToCache = [
-    '/index.html',
-    '/privacy.html',
-    '/terms.html',
-
     '/css/fyn_radio_styling.css',
     '/css/fyn_radio_mobile_style.css',
     '/css/css/all.css',
@@ -20,6 +16,12 @@ var filesToCache = [
     '/css/webfonts/fa-solid-900.ttf',
     '/css/webfonts/fa-solid-900.woff',
     '/css/webfonts/fa-solid-900.woff2',
+
+    '/index.html',
+    '/privacy.html',
+    '/terms.html',
+
+
 
     '/scripts/fynradio_scripts.js',
     '/scripts/responsive-nav.js',
@@ -46,9 +48,6 @@ var filesToCache = [
     '/icons/responsivenav.svg',
     '/icons/responsivenav.ttf',
     '/icons/responsivenav.woff'
-
-
-
 
 ];
 
