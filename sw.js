@@ -1,6 +1,6 @@
-// sw.js
 
-var cacheName = 'FYNRadio_V1';
+
+var cacheName = 'fynradio_V1';
 const offlineUrl = '/offline_page.html';
 var cacheVersion = 1;
 var currentCache = {
@@ -17,18 +17,11 @@ var filesToCache = [
     '/css/webfonts/fa-solid-900.woff',
     '/css/webfonts/fa-solid-900.woff2',
 
-    '/index.html',
-    '/privacy.html',
-    '/terms.html',
-
-
-
     '/scripts/fynradio_scripts.js',
     '/scripts/responsive-nav.js',
     '/scripts/fastclick.js',
     '/scripts/scroll.js',
     '/scripts/fixed-responsive-nav.js',
-    
 
     '/pics/1.webp',
     '/pics/2.webp',
@@ -48,8 +41,11 @@ var filesToCache = [
     '/icons/responsivenav.eot',
     '/icons/responsivenav.svg',
     '/icons/responsivenav.ttf',
-    '/icons/responsivenav.woff'
+    '/icons/responsivenav.woff',
 
+    '/index.html',
+    '/privacy.html',
+    '/terms.html'
 ];
 
 
@@ -106,6 +102,9 @@ self.addEventListener('fetch', event => {
       // and a copy of the response that can be used in the cache.
       const fetchResponseP = fetch(normalizedUrl);
       const fetchResponseCloneP = fetchResponseP.then(r => r.clone());
+      const offPage = fetch(offlineUrl);
+
+
 
       // event.waitUntil() ensures that the service worker is kept alive
       // long enough to complete the cache update.
@@ -115,10 +114,17 @@ self.addEventListener('fetch', event => {
       }());
 
       // Prefer the cached response, falling back to the fetch response.
-      return (await caches.match(normalizedUrl)) || fetchResponseP;
+      return (await caches.match(normalizedUrl)) || fetchResponseP || offPage;
     }());
   }
+
 });
+
+
+
+
+
+
 
 
 
