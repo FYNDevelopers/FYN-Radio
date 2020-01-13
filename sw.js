@@ -17,12 +17,6 @@ var filesToCache = [
     '/css/webfonts/fa-solid-900.woff',
     '/css/webfonts/fa-solid-900.woff2',
 
-    '/scripts/fynradio_scripts.js',
-    '/scripts/responsive-nav.js',
-    '/scripts/fastclick.js',
-    '/scripts/scroll.js',
-    '/scripts/fixed-responsive-nav.js',
-
     '/pics/1.webp',
     '/pics/2.webp',
     '/pics/3.webp',
