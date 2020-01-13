@@ -1,0 +1,15 @@
+{
+  "name": "FYN Radio",
+  "short_name": "FYN Radio",
+  "description": "Cheapest radio stream hosting on the internet",
+  "start_url": "/index.html",
+  "background_color": "#ffffff",
+  "theme_color": "#00aeef",
+  "orientation" : "any",
+  "display" : "standalone",
+  "icons": [{
+    "src": "pics/icon_256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }]
+}
