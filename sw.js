@@ -1,5 +1,3 @@
-// sw.js
-
 var cacheName = 'FYNRadio_V1';
 const offlineUrl = '/offline_page.html';
 var cacheVersion = 1;
