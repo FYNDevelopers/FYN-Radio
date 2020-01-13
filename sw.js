@@ -82,7 +82,6 @@ self.addEventListener('install', function(event) {
 
 
 
-
 self.addEventListener('fetch', event => {
   if (event.request.mode === 'navigate') {
     // See /web/fundamentals/getting-started/primers/async-functions
@@ -101,9 +100,6 @@ self.addEventListener('fetch', event => {
       // and a copy of the response that can be used in the cache.
       const fetchResponseP = fetch(normalizedUrl);
       const fetchResponseCloneP = fetchResponseP.then(r => r.clone());
-      const offPage = fetch(offlineUrl);
-
-
 
       // event.waitUntil() ensures that the service worker is kept alive
       // long enough to complete the cache update.
@@ -113,10 +109,9 @@ self.addEventListener('fetch', event => {
       }());
 
       // Prefer the cached response, falling back to the fetch response.
-      return (await caches.match(normalizedUrl)) || fetchResponseP || offPage;
+      return (await caches.match(normalizedUrl)) || fetchResponseP;
     }());
   }
-
 });
 
 
