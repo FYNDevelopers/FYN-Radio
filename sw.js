@@ -1,7 +1,6 @@
-
+//ws.js
 
 var cacheName = 'fynradio_V1';
-const offlineUrl = '/offline_page.html';
 var cacheVersion = 1;
 var currentCache = {
   offline: 'offline-cache' + cacheVersion
@@ -43,6 +42,8 @@ var filesToCache = [
 
 
 
+
+
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
         navigator.serviceWorker.register('/sw.js').then(function (registration) {
@@ -67,6 +68,7 @@ self.addEventListener('install', function(event) {
         })
     );
 });
+
 
 
 
@@ -107,7 +109,6 @@ self.addEventListener('fetch', event => {
     }());
   }
 });
-
 
 
 
