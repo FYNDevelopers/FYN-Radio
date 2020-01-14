@@ -37,7 +37,7 @@ var filesToCache = [
 
     '/index.html',
     '/privacy.html',
-    '/terms.html'
+    '/terms.html',
 ];
 
 
