@@ -14,6 +14,7 @@ body{
 	padding: 0;
 	margin: 0;
 	font-family: Arial;
+	
 }
 
 #header_dsktp{
@@ -263,7 +264,6 @@ body{
 	flex-direction: column;
 	align-items: center;
 	background: #00aeef;
-	transition: 0.5s;
 }
 
 #pricing h3{
@@ -277,12 +277,10 @@ body{
 
 
 #pricing .plans_container{
-	height: 300px;
 	width: 90%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	transition: 0.5s;
 }
 
 #pricing .plans_container p{
@@ -415,13 +413,12 @@ body{
 	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
 }
 
-#pricing .includes{
-	background: url('../pics/includes.webp') no-repeat;
+#includes{
+	background: #fff url('../pics/free__with_every_plan.webp') no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 45vw;
+	height: 80vw;
 	width: 100%;
-	margin: 20px 0 20vh 0;
 }
 
 
@@ -438,7 +435,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 20px;
+	padding: 20px 20px 20vh 20px;
 }
 
 #about h3{
@@ -454,6 +451,12 @@ body{
 	width: 75%;
 }
 
+#about p a{
+	text-decoration: none;
+	color: black;
+}
+
+
 #about button{
 	width: 200px;
 	padding: 15px;
@@ -462,7 +465,6 @@ body{
 	color: white;
 	border-radius: 3px;
 	font-size: 1rem;
-	margin: 50px 0 20vh 0;
 	transition: 0.5s;
 }
 
@@ -822,10 +824,11 @@ footer a:hover{
 
 	#home .top .home_left{
 		width: 100vw;
+		height: 57vh;
 	}
 
 	#home .top .home_left h1{
-		margin: 17vh 0 5vh 0;
+		margin: 12vh 0 0 0;
 		font-size: 12vw;
 		padding: 20px;
 	}
@@ -834,10 +837,14 @@ footer a:hover{
 		display: none;
 	}
 
+	#home .bottom{
+		height: 25vh;
+	}
+
 	#home .bottom button{
 		border-radius: 50%;
-		height: 100px;
-		width: 100px;
+		height: 90px;
+		width: 90px;
 	}
 
 	#home .bottom h2{
@@ -938,10 +945,6 @@ footer a:hover{
 	#pricing .plans_container .plan_item5:hover{
 		width: 80%;
 
-	}
-
-	#pricing .includes{
-		margin: 10vh 0 15vh 0;
 	}
 
 	#about h3{
