@@ -8,6 +8,11 @@ var currentCache = {
 };
 
 var filesToCache = [
+  
+    '/index.html',
+    '/privacy.html',
+    '/terms.html',
+  
     '/css/fyn_radio_styling.css',
     '/css/fyn_radio_mobile_style.css',
     '/css/css/all.css',
@@ -34,11 +39,9 @@ var filesToCache = [
     '/icons/responsivenav.eot',
     '/icons/responsivenav.svg',
     '/icons/responsivenav.ttf',
-    '/icons/responsivenav.woff',
+    '/icons/responsivenav.woff'
 
-    '/index.html',
-    '/privacy.html',
-    '/terms.html',
+
 ];
 
 
