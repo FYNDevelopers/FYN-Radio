@@ -251,7 +251,10 @@ body{
 }
 
 
-
+#features .feature_list .feature_item p a{
+	text-decoration: none;
+	color: black;
+}
 
 
 
