@@ -11,7 +11,7 @@ var filesToCache = [
   
     '/index.html',
     '/privacy.html',
-    '/terms.html'
+    '/terms.html',
 
     '/css/fyn_radio_styling.css',
     '/css/fyn_radio_mobile_style.css',
