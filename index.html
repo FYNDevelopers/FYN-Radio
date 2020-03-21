@@ -54,52 +54,11 @@
  <!-- End Cookie Consent -->
 	
 	
+
 	
 	
-<!--	
-<script type="text/javascript">//<![CDATA[ 
-(function() {
-    var configuration = {
-    "token": "d78e3ed424bb79b86f197b06e32fac8d",
-    "domains": [
-        "fynradio.com"
-    ],
-    "capping": {
-        "limit": 5,
-        "timeout": 24
-    },
-    "entryScript": {
-        "type": "timeout",
-        "timeout": 3000,
-        "capping": {
-            "limit": 5,
-            "timeout": 24
-        }
-    },
-    "exitScript": {
-        "enabled": true
-    },
-    "popUnder": {
-        "enabled": true
-    }
-};
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = '//cdn.shorte.st/link-converter.min.js';
-    script.onload = script.onreadystatechange = function () {var rs = this.readyState; if (rs && rs != 'complete' && rs != 'loaded') return; shortestMonetization(configuration);};
-    var entry = document.getElementsByTagName('script')[0];
-    entry.parentNode.insertBefore(script, entry);
-})();
-//]]></script>
--->
 	
-
-
-
-
-
-
-
+	
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -144,6 +103,7 @@
           <li class="menu-item"><a href="#about" data-scroll>About us</a></li>
           <li class="menu-item"><a href="#faq" data-scroll>Faq</a></li>
           <li class="menu-item"><a href="#contact" data-scroll>Contact us</a></li>
+          <li class="menu-item"><a href="trial.html">Free trial</a></li>
         </ul>
       </nav>
     </header>
@@ -174,7 +134,10 @@
 					<li><a href="#faq">Faq</a></li>
 					<li><a href="#contact">Contact us</a></li>
 				</ul>
+				<a href="trial.html"><button type="button">Free Trial</button></a>
+				
 			</div>
+
 			
 		</div>
 
@@ -336,7 +299,7 @@
 
 			<button class="faq_q">Do you have free plans?</button>
 			<div class="faq_a">
-				<p>Yes. We offer free streaming to Non-Profit making Organizations. This, however, does not extend to religious or Community Based Organizations. Groups in this category are charitable organizations providing humanitarian services. <a href="#contact">Contact us</a> and make a request.</p>
+				<p>Yes. 100 listeners, 128Kbps, no bandwidth caps. Register for <a href="trial.html">free trial</a> now.</p>
 			</div>	
 
 
@@ -416,7 +379,7 @@
 				<span><label>Email</label><input id="email" type="email" placeholder="Email"></span> 
 				<span><label>Subject</label><input id="Subject" type="text" placeholder="Subject"></span>
 				<span><label>Message</label><textarea id="Message" placeholder="Type your message here"></textarea></span>				
-			<button onclick="reachUs()">Submit</button>	
+			<button onclick="reachUs()" type="button">Submit</button>	
 			</form>
 
 			
@@ -445,7 +408,6 @@
     <script src="scripts/scroll.js"></script>
     <script src="scripts/fixed-responsive-nav.js"></script>
     
-    <script type="text/javascript" src="https://myaccount.fynradio.com/index.php?_url=/orderbutton/js&options=1&width=500&theme_color=blue&background_color=%23007caf&background_opacity=25&background_close=1&show_custom_form_values=1&bind_selector=.order-button&border_radius=0"></script>
 
     <script>
 		var acc = document.getElementsByClassName("faq_q");
