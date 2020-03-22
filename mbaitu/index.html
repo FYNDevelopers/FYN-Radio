@@ -1,0 +1,96 @@
+
+
+<!-- 
+@This site is for demonstration purposes only. 
+@Aim is to show ssl secure radio streaming
+@fynradio.com
+ -->
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mbaitu FM Radio Demo page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="author" content="FYN Developers, info@fyndevelopers.com">
+  <meta name="theme-color" content="#39037d">
+
+  <link rel="stylesheet" type="text/css" href="css/sample_page_styling.css">
+  <link rel="stylesheet" href="css/mediaelementplayer.css">
+  <link rel="stylesheet" href="css/progres-bar.css">
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+
+</head>
+<body>
+
+
+  <main>
+    <section id="top">
+      <span><img src="pictures/ham.png" width="25px" /><h1> Mbaitu FM</h1></span>
+      
+      <h2>https Radio Player Sample</h2>
+    </section>
+
+    <section id="logo"></section>
+
+    <section id="live_msg">
+      <p>Live</p>
+    </section>
+
+    <section id="the_player">
+
+        <div>
+
+
+              <div>
+
+                      <section style="display: none;">
+                              <form >
+                                  <label>
+                                      <select name="lang">
+                                   </select>
+                                  </label>
+                                  <label>
+                                  <select name="stretching">
+
+                                  </select>
+                                  </label>
+                              </form>
+                          </section>
+
+                       <div id="container" >
+                              
+                              <div class="players" id="player2-container" >
+                                  <div class="media-wrapper">
+                                      <audio id="player2" autoplay="autoplay" controls style="width:280px;">
+                                          <source src="https://stream.mbaitufm.fynradio.com" type="audio/mp3">
+                                      </audio>
+                                  </div>        
+                              </div>
+                      </div>
+              </div>
+          </div>
+    </section>
+
+    <p>Demo by FYN Radio | <a href="https://fynradio.com" target="_blank">fynradio.com</a></p>
+    
+  </main>
+
+
+
+
+<script src="scripts/global_scripts.js"></script>
+<script src="scripts/mediaelement-and-player.js"></script>
+<script src="scripts/player_custom.js"></script>
+
+</body>
+</html>

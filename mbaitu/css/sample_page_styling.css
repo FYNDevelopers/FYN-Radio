@@ -1,0 +1,122 @@
+html{
+	font-family: Arial;
+}
+
+
+body{
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+
+main{
+	width: 40%;
+	min-height: 95vh;
+	border: 1px solid #39037d;
+}
+
+
+#top{
+	height: 100px;
+	background: #39037d;
+	display: flex;
+	flex-direction: column;
+}
+
+#top span{
+	display: flex;
+	margin: 20px 0 25px 15px;
+}
+
+#top h1{
+	color: white;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	padding-left: 8px;
+}
+
+#top h2{
+	color: white;
+	font-weight: normal;
+	margin: 0;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+
+#logo{
+	background: url('../pictures/logo.png') no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 80px;
+	width: 100%;
+	margin: 8vh 0 8vh 0;
+}
+
+#live_msg{
+	background: #f0f0f0;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#live_msg p{
+	font-style: normal;
+	font-size: 1.5rem;
+}
+
+
+#the_player{
+	height: 200px;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+p{
+	text-align: center;
+	font-style: italic;
+	font-size: 0.8rem;
+}
+
+p a{
+	text-decoration: none;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 768px){
+
+	main{
+		width: 100%;
+		border: none;
+	}
+	
+
+
+}
+
+
