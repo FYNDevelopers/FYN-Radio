@@ -690,7 +690,7 @@ body{
 #trial_form .trial_left{
 	width: 30%;	
 	color: white;
-	display: flex;
+	/*display: flex;*/
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
