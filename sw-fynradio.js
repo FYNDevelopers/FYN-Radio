@@ -11,37 +11,13 @@ var filesToCache = [
   
     '/index.html',
     '/privacy.html',
-    '/terms.html'
-/*
-    '/css/fyn_radio_styling.css',
-    '/css/fyn_radio_mobile_style.css',
-    '/css/css/all.css',
-    '/css/webfonts/fa-solid-900.eot',
-    '/css/webfonts/fa-solid-900.svg',
-    '/css/webfonts/fa-solid-900.ttf',
-    '/css/webfonts/fa-solid-900.woff',
-    '/css/webfonts/fa-solid-900.woff2',
+    '/terms.html',
+    '/radios/kenya.html',
+    '/submit.html',
+    '/disclaimer.html'
 
-    '/pics/1.webp',
-    '/pics/2.webp',
-    '/pics/3.webp',
-    '/pics/4.webp',
-    '/pics/5.webp',
-    '/pics/6.webp',
-    '/pics/bg.webp',  
-    '/pics/fyn_radio_logo.png',
-    '/pics/fyn_radio_logo_2.png',
-    '/pics/fyn_radio_logo_2_white.png',
-    '/pics/icon_256.png',
-    '/pics/icon_512.png',
-    '/pics/includes.webp',
 
-    '/icons/responsivenav.eot',
-    '/icons/responsivenav.svg',
-    '/icons/responsivenav.ttf',
-    '/icons/responsivenav.woff'
-*/
-
+   
 ];
 
 
