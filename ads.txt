@@ -1,3 +1,8 @@
+#Google Ads
+google.com, pub-7725398971506657, DIRECT, f08c47fec0942fa0
+
+
+
 #ads.txt for fynradio.com generated on 17-04-2020 by fmxSSP
 x.fidelity-media.com, 5151, DIRECT
 smartyads.com,858,DIRECT,fd2bde0ff2e62c5d
