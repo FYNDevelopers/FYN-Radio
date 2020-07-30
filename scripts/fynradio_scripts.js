@@ -143,3 +143,92 @@ var ft_Station_description = document.getElementById("ft_Station_description").v
 }
 
 
+
+
+
+
+
+
+//submit station
+
+function submitStation(){
+
+
+var sb_Name = document.getElementById("sb_Name").value
+var sb_email = document.getElementById("sb_email").value
+var sb_role = document.getElementById("sb_role").value
+var sb_station_name = document.getElementById("sb_station_name").value
+var sb_logo = document.getElementById("sb_logo").value
+var sb_website = document.getElementById("sb_website").value
+var sb_fb = document.getElementById("sb_tw").value
+var sb_tw = document.getElementById("sb_tw").value
+var sb_stream_link = document.getElementById("sb_stream_link").value
+var sb_station_description = document.getElementById("sb_station_description").value
+
+    if (
+      sb_Name.length<3 || 
+      sb_station_name.length<3 ||
+      sb_logo.length<3 ||
+      sb_website.length<3 ||
+      sb_fb.length<3 ||
+      sb_tw.length<3 ||
+      sb_stream_link.length<3 ||
+      sb_station_description.length<3
+      ) {
+
+        alert('Please fill in all details')
+      return false
+    }
+
+  var emailID = sb_email
+  atpos = emailID.indexOf("@")
+  dotpos = emailID.lastIndexOf(".")
+    if (atpos < 1 || ( dotpos - atpos < 2 ))
+    {
+        alert("Please enter correct email")
+        return false
+    }
+
+
+
+
+
+
+  else {
+
+    const scriptSubmitStation = 'https://script.google.com/macros/s/AKfycbwL-8bwYl58YefAp9-9baOGTYQWHlhUbuqVVbj_dchQ-JMP8-RW/exec?action=submit_station'
+    var sendUserRequest = scriptSubmitStation+
+                              '&sb_Name='+sb_Name+
+                              '&sb_email='+sb_email+
+                              '&sb_role='+sb_role+
+                              '&sb_station_name='+sb_station_name+
+                              '&sb_logo='+sb_logo+
+                              '&sb_website='+sb_website+
+                              '&sb_fb='+sb_fb+
+                              '&sb_tw='+sb_tw+
+                              '&sb_stream_link='+sb_stream_link+
+                              '&sb_station_description='+sb_station_description
+
+
+    var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function() { 
+          if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+              var res = JSON.parse(this.responseText)
+
+            if (res == 'Submission Received') {
+              sessionStorage.setItem("ApplicantName", sb_Name)
+              alert(
+                'Dear ' + sb_Name + ', \n Your submission has been sent. The information you provided will be verified before being posted on our site' 
+
+                )
+          }
+          
+      }
+      xmlHttp.open("GET", sendUserRequest, true); // true for asynchronous 
+      xmlHttp.send();
+    
+  }
+
+
+
+}
