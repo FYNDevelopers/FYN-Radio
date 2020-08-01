@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://www.fynradio.com/</loc>
+	<lastmod>2020-08-01T10:08:30+01:00</lastmod>
+	<priority>1.0</priority>
+	<changefreq>monthly</changefreq>
+</url>
+<url>
+	<loc>https://www.fynradio.com/trial</loc>
+	<lastmod>2020-08-01T10:08:30+01:00</lastmod>
+	<priority>1.0</priority>
+	<changefreq>monthly</changefreq>
+</url>
+<url>
+	<loc>https://www.fynradio.com/terms</loc>
+	<lastmod>2020-08-01T10:08:34+01:00</lastmod>
+	<priority>1.0</priority>
+	<changefreq>monthly</changefreq>
+</url>
+<url>
+	<loc>https://www.fynradio.com/privacy</loc>
+	<lastmod>2020-08-01T10:08:34+01:00</lastmod>
+	<priority>1.0</priority>
+	<changefreq>monthly</changefreq>
+</url>
+</urlset>
